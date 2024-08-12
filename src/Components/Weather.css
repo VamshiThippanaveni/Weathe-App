@@ -95,16 +95,17 @@
     }
     .search-bar {  
         flex-direction:row;
-        align-items: center; 
+        align-items: stretch; 
         gap: 10px; 
     }
     
 }
 @media (max-width: 480px) {
     .search-bar input {
+        width: calc(100% - 80px);
         font-size: 16px;
         padding-left: 15px;
-        height: 45px;
+        height: 40px;
     }
 
     .search-bar img {
@@ -114,6 +115,19 @@
     .weather-icon {
         width: 100px;
         margin: 20px 0;
+    }
+}
+
+@media (max-width: 1080px) {
+    .search-bar input {
+        font-size: 16px; 
+        height: 45px;    
+        padding-left: 20px; 
+    }
+
+    .search-bar img {
+        width: 40px;  
+        padding: 10px;
     }
 }
 /* Further adjustments for screens up to 320px */
